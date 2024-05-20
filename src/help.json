@@ -1,0 +1,42 @@
+[
+  {
+    "image": "/cardImage/truck1.png",
+    "title": "Karayolu Taşımacılığı",
+    "text": "Avrupa başta olmak üzere dünyadaki birçok noktaya karayolu taşımacılığı hizmeti sunmaktayız"
+  },
+  {
+    "image": "/cardImage/plan.png",
+    "title": "Havayolu Taşımacılığı",
+    "text": "Dünyanın önemli şehirlerine havayolu taşımacılığı hizmetimizle ulaşabilirsiniz."
+  },
+  {
+    "image": "/cardImage/ship.png",
+    "title": "DenizYolu Taşımacılığı",
+    "text": "Dünyadaki birçok limana ulaşabileceğiniz denizyolu taşımacılığı hizmeti sunmaktayız."
+  },
+  {
+    "image": "/cardImage/train.png",
+    "title": "Demiryolu Taşımacılığı",
+    "text": "Dünyadaki birçok önemli merkeze demir yolu taşımacılığı hizmeti sunmaktayız."
+  },
+  {
+    "image": "/cardImage/depo1.png",
+    "title": "E-ticare Lojistiği",
+    "text": "E-ticaret uygulamalarınızda, Enco olarak kaliteli ve güvenilir hizmetimizle yanınızdayız."
+  },
+  {
+    "image": "/cardImage/depo.png",
+    "title": "Depolama Hizmetleri",
+    "text": "Türkiye ve Almanya’da bulunan depolarımızla depo yönetimi süreçlerinize destek oluyoruz."
+  },
+  {
+    "image": "/cardImage/cargo.png",
+    "title": "Sprint Taşımacılığı",
+    "text": "Avrupa başta olmak üzere dünyadaki birçok noktaya karayolu taşımacılığı hizmeti sunmaktayız"
+  },
+  {
+    "image": "/cardImage/truck.png",
+    "title": "Kontrat Lojistiği",
+    "text": "Her türlü lojistik çözümünde Kontrat Lojistiği ile yanınızdayız."
+  }
+]

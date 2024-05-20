@@ -1,0 +1,265 @@
+.navContainer {
+  padding: 50px 210px;
+  height: 144px;
+  max-height: 144px !important;
+  max-width: 1800px;
+}
+
+.navBarImage {
+  width: 130px;
+  height: 45px;
+}
+
+.navbarMiddleButton {
+  width: 138px;
+  height: 44px;
+  box-sizing: border-box;
+  padding: 3px 20px;
+  background-color: #313131;
+  font-size: 18px;
+  font-weight: 300;
+  border-radius: 7px;
+  color: #ffffff;
+  outline: none;
+  border: none;
+  transition-duration: 0.5s;
+}
+
+.navbarMiddleButton:hover {
+  background-color: #2260ff;
+}
+
+.navLink {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+ul {
+  text-transform: capitalize;
+  list-style-type: none;
+}
+
+ul li {
+  font-weight: 400;
+  font-size: 16px;
+  transition-duration: 0.5s;
+  display: block;
+  box-sizing: border-box;
+  cursor: pointer;
+}
+
+ul li:hover {
+  font-weight: 500;
+  color: #2260ff;
+}
+
+.megaMenu {
+  position: absolute;
+  width: 100%;
+  left: 0;
+  top: 144px;
+  background: white;
+  box-sizing: border-box;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 0;
+  z-index: 1000;
+  display: flex;
+  flex-direction: column;
+  height: 0;
+  border-top: none;
+  overflow: hidden;
+  transition: height 0.5s ease-in-out;
+}
+
+.megaMenu.show {
+  height: 467px;
+  box-sizing: border-box;
+  border: 1px solid #d4d4d4;
+  border-top: none;
+}
+
+.megaMenuContainer {
+  padding: 30px 230px 20px 210px;
+}
+
+.megaMenuItemHeader {
+  font-family: Inter;
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 24.2px;
+  text-align: left;
+  padding-left: 7px;
+}
+
+.megaMenuItem {
+  padding-left: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 15px;
+}
+
+.megaMenuItem li {
+  font-family: Inter;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 24px;
+  text-align: left;
+}
+
+.megaMenuImageText {
+  font-family: Inter;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 29.05px;
+  text-align: left;
+  color: #ffffff;
+  top: 10px;
+  right: 10px;
+}
+
+.menuImage {
+  object-fit: cover;
+}
+
+.menuImageHover {
+  position: absolute;
+  bottom: 100%;
+  right: 0;
+  top: 0;
+  opacity: 0;
+  background-color: #099f4999;
+  overflow: hidden;
+  width: 100%;
+  height: 100%;
+  transition: 0.5s ease;
+}
+
+.megaMenuImageArrow {
+  bottom: 10px;
+  right: 10px;
+  transition-duration: 0.5s;
+}
+
+.megaMenuImageContainer:hover .menuImageHover {
+  opacity: 0.5;
+}
+
+.megaMenuImageContainer:hover .megaMenuImageArrow {
+  scale: 1.3;
+  bottom: 13px;
+  right: 13px;
+}
+
+.mobileNav {
+  display: none;
+}
+
+@media only screen and (max-width: 1300px) {
+  .megaMenuImageContainer {
+    display: none;
+  }
+
+  .navContainer {
+    padding: 50px 100px;
+  }
+
+  .megaMenuContainer {
+    padding: 50px 100px;
+  }
+}
+
+@media only screen and (max-width: 991px) {
+  .navLink {
+    display: none;
+  }
+
+  .mobileNav {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: absolute;
+    top: 144px;
+    background: white;
+    box-sizing: border-box;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    left: 0;
+    z-index: 100;
+    width: 100%;
+    height: 0;
+    overflow: hidden;
+    transition: height 0.5s ease-in-out;
+  }
+
+  .mobileNavContent {
+    padding: 5px 50px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+
+  .mobileNav.openMobileNav {
+    height: 40px;
+  }
+}
+@media only screen and (max-width: 640px) {
+  .navContainer {
+    padding: 50px;
+  }
+
+  .megaMenuContainer {
+    padding: 30px;
+  }
+
+  .navbarMiddleButton {
+    width: 100px;
+    height: 37px;
+    padding: 5px 15px;
+  }
+
+  .navBarImage {
+    width: 100px;
+  }
+
+  .mobileNav.openMobileNav {
+    height: 180px;
+  }
+
+  .megaMenuItemHeader {
+    font-family: Inter;
+    font-size: 18px;
+    font-weight: 600;
+    text-align: left;
+    padding-left: 7px;
+    margin-bottom: 0;
+  }
+
+  .megaMenuItem {
+    padding-left: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 5px;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .navContainer {
+    padding: 10px;
+    height: 100px;
+    max-height: 100px !important;
+  }
+
+  .megaMenuContainer {
+    padding: 10px;
+  }
+
+  .megaMenu {
+    top: 100px;
+  }
+
+  .mobileNav {
+    top: 100px;
+  }
+}

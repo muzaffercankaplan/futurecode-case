@@ -1,0 +1,270 @@
+.carousel {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.carouselItem {
+  min-width: 100%;
+  width: 100%;
+  height: 100%;
+}
+
+.carouselItem > img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.carouselInner {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+  height: 100%;
+  width: 100%;
+}
+
+.carouselTextContainer {
+  position: absolute;
+  left: 10%;
+  top: 20%;
+  color: #ffffff;
+  display: flex;
+  align-items: center;
+}
+
+.carouselContactButton {
+  position: absolute;
+  left: 10%;
+  top: 60%;
+  width: 200px;
+  height: 50px;
+  box-sizing: border-box;
+  background: rgba(255, 255, 255, 0.5);
+  border: 1px solid #ffffff;
+  color: #ffffff;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition-duration: 0.5s;
+}
+
+.carouselContactButton:hover {
+  background-color: #082d94;
+  transform: translateY(-10px);
+}
+
+.carouselContactButton > p {
+  margin: 0;
+  padding: 0;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 18.75px;
+  text-align: center;
+}
+
+.textHeader {
+  font-size: 40px;
+  font-weight: 600;
+  line-height: 46.88px;
+  color: white;
+  width: 450px;
+  margin: 0;
+}
+
+.textBody {
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 23.44px;
+  text-align: left;
+  width: 600px;
+  padding: 0;
+  margin: 0;
+}
+
+.carouselBorder {
+  background-color: transparent;
+  width: 45px;
+  height: 196px;
+  border: 6px solid #ffffff;
+  border-right: none;
+  margin-right: 10px;
+}
+
+.indexOverlay {
+  position: absolute;
+  bottom: 10%;
+  left: 10%;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.imageDot {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 60px;
+  height: 60px;
+  padding: 10px;
+  border-radius: 50%;
+  cursor: pointer;
+  border: #ffffff;
+}
+
+.imageDot > div {
+  width: 12px;
+  height: 12px;
+  background-color: #ffffff;
+  border-radius: 50%;
+}
+
+.imageDot:hover {
+  border: 2px solid #ffffff;
+  width: 60px;
+  height: 60px;
+  padding: 10px;
+  border-radius: 50%;
+  transition-duration: 0.5s;
+}
+
+.activeİmage {
+  border: 2px solid #ffffff;
+  width: 60px;
+  height: 60px;
+  padding: 10px;
+  border-radius: 50%;
+}
+
+.carouselButton {
+  background-color: transparent;
+  position: absolute;
+  padding: 10px;
+  border-radius: 100%;
+  border: 3px solid #ffffff;
+  top: 50%;
+  z-index: 100;
+}
+
+.prev {
+  left: 30px;
+  transition-duration: 0.5s;
+}
+
+img {
+  transition-duration: 0.5s;
+}
+
+.prev:hover > img,
+.next:hover > img {
+  transform: translateX(-5px);
+}
+
+.next {
+  transform: rotate(180deg);
+  right: 30px;
+}
+
+@media only screen and (max-width: 991px) {
+  .carouselTextContainer {
+    position: absolute;
+    left: 10%;
+    top: 20%;
+    color: #ffffff;
+    display: flex;
+    align-items: center;
+  }
+
+  .textHeader {
+    font-size: 30px;
+    width: 450px;
+  }
+
+  .textBody {
+    max-width: 400px;
+  }
+
+  .carouselBorder {
+    width: 40px;
+    height: 156px;
+    border: 4px solid #ffffff;
+    border-right: none;
+  }
+}
+@media only screen and (max-width: 640px) {
+  .carouselContactButton {
+    left: 20%;
+    top: 45%;
+  }
+
+  .indexOverlay {
+    left: 50%;
+    transform: translate(-50%, -50%);
+    gap: 5px;
+  }
+
+  .imageDot {
+    width: 40px;
+    height: 40px;
+    padding: 10px;
+  }
+
+  .imageDot > div {
+    width: 10px;
+    height: 10px;
+  }
+
+  .imageDot:hover {
+    width: 40px;
+    height: 40px;
+    padding: 8px;
+  }
+
+  .activeİmage {
+    width: 40px;
+    height: 40px;
+    padding: 8px;
+  }
+
+  .carouselButton {
+    padding: 6px;
+    border: 1px solid #ffffff;
+  }
+
+  .prev {
+    left: 20px;
+    transition-duration: 0.5s;
+  }
+
+  .prev > img,
+  .next > img {
+    width: 20px;
+  }
+
+  .next {
+    transform: rotate(180deg);
+    right: 10px;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .textHeader {
+    line-height: 25px;
+    font-size: 25px;
+    width: 300px;
+  }
+
+  .textBody {
+    max-width: 300px;
+  }
+
+  .carouselTextContainer {
+    left: 5%;
+  }
+
+  .carouselBorder {
+    border: 3px solid #ffffff;
+    border-right: none;
+  }
+}
