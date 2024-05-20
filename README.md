@@ -31,7 +31,7 @@ Check out the live demo of the application [here](https://futurecode.pages.dev/)
 
 Which technologies used:
 
-| Name                             | Version |
-| -------------------------------- | ------- |
-| [react](https://react.dev/)      | ^18.3.1 |
-| [bootstrap](https://vitejs.dev/) | ^5.3.3  |
+| Name                                                                         | Version |
+| ---------------------------------------------------------------------------- | ------- |
+| [react](https://react.dev/)                                                  | ^18.3.1 |
+| [bootstrap](https://getbootstrap.com/docs/5.0/getting-started/introduction/) | ^5.3.3  |
