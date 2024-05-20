@@ -5,7 +5,7 @@ import MegaMenuItem from "./MegaMenuItem";
 import "./Navbar.css";
 
 const Navbar = () => {
-  const [showMegaMenu, setShowMegaMenu] = useState(true);
+  const [showMegaMenu, setShowMegaMenu] = useState(false);
   const [openNav, setOpenNav] = useState(false);
 
   const hoverRef = useRef();
